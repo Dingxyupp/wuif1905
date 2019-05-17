@@ -1,0 +1,877 @@
+h1,h2,h3,h4,div,p,form,input,ul,ol,li,body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    font-family: 宋体;
+    font-size: 18px;
+    background: #E9EAED;
+}
+.startlist a:hover{
+    color: #00c1de;
+}
+
+/*head*/
+.header{
+    /*快标签不写默认百分百*/
+    width: 100%;
+    height: 60px;
+    background: black;
+}
+.headbox{
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    background: black;
+
+}
+.headbox h1{
+    width: 200px;
+    height:60px;
+    background: black;
+    float: left;
+    line-height: 60px;
+    font-weight: normal;
+    color: #ffffff;
+    margin-right: 30px;
+}
+.startlist li a{
+    height:60px;
+    background: black;
+    float: left;
+    line-height: 60px;
+    text-decoration: none;
+    margin-right: 30px;
+    color: white;
+}
+.search{
+    width: 100px;
+    height:60px;
+    background: black;
+    float: right;
+}
+.search a img{
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+}
+
+/*.bozi{*/
+/*    width: 1200px;*/
+/*    height: 320px;*/
+/*    background: #ffffff;*/
+/*    margin: 20px auto;*/
+/*}*/
+
+
+/*neck*/
+.neck{
+    width: 1200px;
+    height: 330px;
+    background: #E9EAED;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.picture{
+    width: 600px;
+    height: 330px;
+    background: #ffffff;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+    /*border-radius: 10px;*/
+}
+.picture ul li img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.leftBtn,.rightBtn{
+    width: 30px;
+    height: 45px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    cursor: pointer;
+}
+.leftBtn{
+    left: 20px;
+}
+.rightBtn{
+    right: 20px;
+}
+.circul{
+    background: green;
+    width: 130px;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    /*overflow: hidden;*/
+}
+.circul li .oneBotton{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+}
+.circul li .twoBotton{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+}
+.circul li .threeBotton{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    left: 80px;
+    bottom: 20px;
+}
+.circul li .fourBotton{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    left: 120px;
+    bottom: 20px;
+}
+.circul a:hover{
+    background: #b7f576;
+}
+.double{
+    width: 330px;
+    height: 330px;
+    background: #E9EAED;
+    margin-right: 10px;
+    float: left;
+    border-radius: 10px;
+}
+.double li{
+    width: 330px;
+    height: 160px;
+    background: #000;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.double li img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    opacity: 0.7;
+}
+.double li:hover img{
+    transform: scale(1.2,1.2);
+    opacity: 1;
+}
+.double li p{
+    position: absolute;
+    left: 100px;
+    top: 75px;
+    right: 55px;
+    bottom: 0px;
+}
+.card{
+    width: 220px;
+    height: 290px;
+    padding: 20px 10px;
+    background: black;
+    float: left;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card p{
+    font-size: 18px;
+    color: #ffffff;
+}
+.card .situ{
+    width: 100%;
+    height: auto;
+    background: black;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.situ li{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #b7f576;
+    float: left;
+    margin-left: 5px;
+}
+.card li img{
+    width: 100%;
+    height: 100%;
+}
+.mp{
+    height: 60px;
+    background: black;
+    color: #89919a;
+    border-radius: 10px;
+}
+/*博客部分*/
+.diary{
+    width: 1200px;
+    height: 390px;
+    background: #f6f6f6;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.list{
+    width: 860px;
+    /*height: 22px;*/
+    background-color: white;
+    float: left;
+    border-bottom: 1px solid #333333;
+    line-height: 20px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.list  li{
+    height: 100%;
+    float: left;
+    margin-right: 50px;
+}
+.part1{
+    width: 860px;
+    height: 350px;
+    background: white;
+    float: left;
+    border-radius: 10px;
+    padding: 20px;
+}
+.double2{
+    width: 280px;
+    background: white;
+    float: left;
+}
+.web{
+    width: 280px;
+    height: 140px;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.web img{
+    width: 100%;
+    height:100%;
+    border-radius: 10px;
+    transition: transform .5s ease-in-out;
+}
+.web:hover img{
+    transform: scale(1.2,1.2);
+}
+.world{
+    width: 280px;
+    height: 140px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.world img{
+    width: 100%;
+    height:100%;
+    border-radius: 10px;
+    transition: transform .5s ease-out;
+}
+.world:hover img{
+    transform: scale(1.5,1.5);
+}
+.essay{
+    width: 560px;
+    height: 300px;
+    background: white;
+    margin-left: 20px;
+    float: left;
+    border-radius: 10px;
+}
+.essay li{
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    margin: 0 0px 27px 10px;
+}
+.essay li.sq p{
+    display: block;
+    font-size: 16px;
+    color: #333333;
+    background: #f7f7f7;
+}
+.essay h2{
+    height: auto;
+    width: 100%;
+    background: grey;
+    font-size: 18px;
+}
+.essay li.sq h2{
+    background: #f7f7f7;
+    font-size: 18px;
+    position: relative;
+}
+.essay li h2 a{
+    padding-left: 20px;
+}
+/*.essay li a:before{*/
+/*    content: "1";*/
+/*    background: grey;*/
+/*    color: white;*/
+/*    position: absolute;*/
+/*    height: 18px;*/
+/*    width: 12px;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*}*/
+.essay li.sq a{
+    background: #f7f7f7;
+    padding-left: 20px;
+}
+.essay li.sq a:before{
+    content: "1";
+    background: black;
+    color: white;
+    position: absolute;
+    height: 18px;
+    width: 12px;
+    left: 0;
+    right: 0;
+}
+.essay p{
+    display: none;
+}
+.part2{
+    width: 260px;
+    /*height: 390px;*/
+    background: white;
+    float: right;
+    padding: 20px 10px 10px 20px;
+    line-height: 20px;
+    border-radius: 10px;
+    float: left;
+    margin-left: 10px;
+
+    /*float: left;*/
+}
+.biaotou{
+    width: 100%;
+    border-bottom: 1px solid #333333;
+    position: relative;
+    line-height: 20px;
+}
+.biaotou:before{
+    content: '';
+    width: 70px;
+    height: 2px;
+    background: #333333;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width .5s ease-in;
+}
+.biaotou:hover:before{
+    width: 90px;
+}
+.updatelist{
+    background: white;
+    height: 280px;
+    /*margin-top: 20px;*/
+    border-radius: 10px;
+    padding: 20px 10px 0px;
+    margin-bottom: 19px;
+}
+.updatelist li{
+    position: relative;
+    background: #f6f6f6;
+    height: 55px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 4px 12px 4px 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 55px;
+    font-size: 16px;
+}
+.updatelist li:hover{
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+.updatelist li::before{
+    content: " ";
+    width: 4px;
+    height: 4px;
+    display: block;
+    background: #333333;
+    position: absolute;
+    left: 17px;
+    top: 30px;
+}
+/*不对称界面*/
+.nodc{
+    width: 1200px;
+    background: #f6f6f6;
+    margin: 20px auto;
+    display: block;
+}
+.tebie{
+    width: 850px;
+    /*height: 1000px;*/
+    background: white;
+    padding: 22px 25px 50px;
+    float: left;
+    border-radius: 10px;
+}
+.hnav{
+    float: right;
+}
+.hnav .shezhi{
+    margin-right: 16px;
+    margin-left: 8px;
+}
+.hnav div{
+    float: left;
+    margin-left: -8px;
+}
+.word{
+    width: 100%;
+    /*height: 570px;*/
+    background: #ffffff;
+    padding-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.word .item:nth-child(3n){
+    border-right: none;
+}
+.word .item:nth-child(3) ~.item{
+    border-bottom: none;
+}
+/*.word:before{*/
+/*    content: "";*/
+/*    height: 612px;*/
+/*    width: 1px;*/
+/*    background: white;*/
+/*    position:absolute;*/
+/*    right: 1px;*/
+/*    top: 0;*/
+/*}*/
+/*.word:after{*/
+/*    content: "";*/
+/*    height: 1px;*/
+/*    width: 848px;*/
+/*    background: white;*/
+/*    position:absolute;*/
+/*    left: 0;*/
+/*    bottom: 10px;*/
+/*}*/
+.word li{
+    width: 262px;
+    height: 285px;
+    background: #f6f6f6;
+    border-bottom: 1px solid #333333 ;
+    border-right: 1px solid #333333 ;
+    float: left;
+    padding: 10px;
+    overflow: hidden;
+}
+.word .item:hover{
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
+}
+.word li a img{
+    display: block;
+    height: 130px;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+.word li a:hover img{
+    transform: scale(1.2,1.2);
+}
+.word li h2{
+    margin: 10px 0px;
+    width: 100%;
+    font-size: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.word p{
+    float: left;
+    font-size: 14px;
+    line-height: 1.5;
+    height: 63px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;/* orient意为朝向，意思显示为垂直朝向*/
+    -webkit-line-clamp: 3;/*意为行数固定为三行，clamp是固定的意思*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.read{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #009966;
+    text-decoration: none;
+}
+.click{
+    width: 260px;
+    /*height: 800px;*/
+    background: white;
+    float: right;
+    padding: 20px 10px 10px 20px;
+    border-radius: 10px;
+}
+.nvzi{
+    width: 100%;
+    background: white;
+    float: left;
+    margin-top: 20px;
+}
+.nvzi img{
+    width: 100%;
+    border-radius: 10px;
+}
+.gz li{
+    width: 80%;
+    background: white;
+    color: black;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+
+}
+.gz li a{
+    text-decoration: none;
+    margin-left: 20px;
+}
+.gz > li:first-child:before{
+    content: " 1 ";
+    width: 13px;
+    height: 15px;
+    background: orangered;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+    line-height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.gz > li:nth-child(2):before{
+    content: "2 ";
+    width: 13px;
+    height: 15px;
+    background: orangered;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+    line-height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.gz > li:nth-child(3):before{
+    content: " 3 ";
+    width: 13px;
+    height: 15px;
+    background: orangered;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+    line-height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.gz > li:nth-child(4):before{
+    content: " 4 ";
+    width: 13px;
+    height: 15px;
+    background: grey;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+    line-height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.gz > li:nth-child(5):before{
+    content: "5 ";
+    width: 13px;
+    height: 15px;
+    background: grey;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+    line-height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.gz > li:nth-child(6):before{
+    content: "6 ";
+    width: 13px;
+    height: 15px;
+    background: grey;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+    line-height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.gz > li:nth-child(7):before{
+    content: "7 ";
+    width: 13px;
+    height: 15px;
+    background: grey;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+    line-height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/*.gz .twoBefore:before{*/
+/*    content: " 2 ";*/
+/*    width: 10px;*/
+/*    height: 10px;*/
+/*    background: orangered;*/
+/*    text-align: center;*/
+/*    color: #ffffff;*/
+/*}*/
+/*.gz .threeBefore:before{*/
+/*    content: " 3 ";*/
+/*    width: 10px;*/
+/*    height: 10px;*/
+/*    background: orangered;*/
+/*    text-align: center;*/
+/*    color: #ffffff;*/
+/*}*/
+/*.gz .fourBefore:before{*/
+/*    content: " 4 ";*/
+/*    width: 10px;*/
+/*    height: 10px;*/
+/*    background: orangered;*/
+/*    text-align: center;*/
+/*    color: #ffffff;*/
+/*}*/
+/*.gz .fiveBefore:before{*/
+/*    content: " 5 ";*/
+/*    width: 10px;*/
+/*    height: 10px;*/
+/*    background: orangered;*/
+/*    text-align: center;*/
+/*    color: #ffffff;*/
+/*}*/
+/*.gz .sixBefore:before{*/
+/*    content: " 6 ";*/
+/*    width: 10px;*/
+/*    height: 10px;*/
+/*    background: orangered;*/
+/*    text-align: center;*/
+/*    color: #ffffff;*/
+/*}*/
+/*.gz .sevenBefore:before{*/
+/*    content: " 7 ";*/
+/*    width: 10px;*/
+/*    height: 10px;*/
+/*    background: orangered;*/
+/*    text-align: center;*/
+/*    color: #ffffff;*/
+/*}*/
+.zz{
+    width: 260px;
+    /*height: 500px;*/
+    background: white;
+    margin: 20px 0 0 0px;
+    float: right;
+    padding: 20px 10px 10px 20px;
+    border-radius: 10px;
+}
+.interview{
+    width: 100%;
+    height: 70px;
+    background: #b7f576;
+    margin-top: 10px;
+    float: left;
+    border-radius: 10px;
+}
+.interview .leftGraphy{
+    height: 100%;
+    width: 25%;
+    background: #333333;
+    float: left;
+}
+.interview .rightEss{
+    height:100%;
+    width: 75%;
+    background: #f6f6f6;
+    float: right;
+    font-size: 16px;
+}
+.rightEss a{
+    text-decoration: none;
+    color: black;
+}
+.interview img{
+    height: 100%;
+    width: 100%;
+}
+.blogess{
+    width: 850px;
+    /*height: 1000px;*/
+    background: white;
+    padding: 22px 25px 50px;
+    float: left;
+    border-radius: 10px;
+    display: block;
+    margin-top: 20px;
+}
+.ding{
+    width: 100%;
+    /*height: 300px;*/
+    background: white;
+    margin-bottom: 20px;
+    /*margin-top: 10px;*/
+    float: left;
+    position: relative;
+    /*border-radius: 10px;*/
+    border-bottom:  1px dashed #333333;
+}
+.ding h2{
+    float: left;
+    color: red;
+    margin-right: 10px;
+}
+.ding a{
+    font-size: 20px;
+    float: left;
+    text-decoration: none;
+    color: black;
+    line-height: 32px;
+}
+.k{
+    width: 260px;
+    height: 120px;
+    border-radius: 10px;
+    background: #333333;
+    float: left;
+    margin-top: 10px;
+}
+.ding a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.wenzi{
+    width: 550px;
+    /*height: 114px;*/
+    border-radius: 10px;
+    background: white;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.ding .wenzi{
+    float: left;
+}
+.ding  .mean{
+    background: #00c1de;
+    width: 80px;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 42px;
+}
+.ding .tt{
+    width: 550px;
+    height: 40px;
+    background: white;
+    float: left;
+    margin: 10px 0 0 20px;
+    border-radius: 10px;
+}
+.ding .touxiang img{
+    width: 40px;
+    height: 40px;
+    /*border-radius: 50%;*/
+    background: #333333;
+    border-radius: 50%;
+    float: left;
+}
+.ding .touxiang p{
+    line-height: 40px;
+    float: left;
+    margin: 0 10px 0  10px;
+}
+.touxiang a{
+    float: left;
+    line-height: 40px;
+}
+.tt .more{
+    width: 90px;
+    float: right;
+    line-height: 40px;
+    background: #12b7de;
+    border-radius: 10px;
+}
+.mean{
+    background: black;
+    width: 80px;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 42px;
+}
+/*.touxiang img{*/
+
+/*}*/
+/*.test{*/
+/*    width: 280px;*/
+/*    height: 200px;*/
+/*    background: #5b3896;*/
+/*    float: right;*/
+/*}*/
+/*span.test2{*/
+/*    width: 1000px;*/
+/*    height: 200px;*/
+/*    background: #1a2196;*/
+/*    float: left;*/
+/*}*/
+/*设置固定三行*/
+/*a{*/
+/*    display: -webkit-box;*/
+/*    -webkit-box-orient: vertical;*/
+/*    -webkit-line-clamp:3;*/
+/*clamp是固定的意思*/
+/*    overflow: hidden;*/
+/*}*/
