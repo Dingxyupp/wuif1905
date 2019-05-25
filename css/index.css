@@ -3,6 +3,9 @@ h1,h2,h3,h4,div,p,form,input,ul,ol,li,body{
     padding: 0;
     list-style: none;
 }
+a{
+    text-decoration: none;
+}
 body{
     font-family: 宋体;
     font-size: 18px;
@@ -16,8 +19,17 @@ body{
 .header{
     /*快标签不写默认百分百*/
     width: 100%;
-    height: 60px;
+    height: 50px;
     background: black;
+    padding: 5px 0;
+}
+.header:before{
+    background: #000 linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+    content: "";
+    height: 5px;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 .headbox{
     width: 1200px;
@@ -93,7 +105,7 @@ body{
 .leftBtn,.rightBtn{
     width: 30px;
     height: 45px;
-    background: black;
+    /*background: black;*/
     position: absolute;
     top: 50%;
     margin-top: -5px;
@@ -176,7 +188,13 @@ body{
     position: relative;
     overflow: hidden;
 }
-.double li img{
+.double a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+.double li a img{
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -193,6 +211,8 @@ body{
     top: 75px;
     right: 55px;
     bottom: 0px;
+    color: white;
+    font-size: 17px;
 }
 .card{
     width: 220px;
@@ -218,9 +238,32 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #b7f576;
+    background: #333333;
     float: left;
     margin-left: 5px;
+}
+.situ li a{
+    display: block;
+    font-size: 38px;
+    box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba(0,0,0,.7);
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.iconfont{
+    text-align: center;
+    line-height: 50px;
+}
+.icon-zhuye{
+    color: #ef5509;
+}
+.icon-youxiang{
+    color: #FF991A;
+}
+.icon-qq{
+    color: #1296DB;
+}
+.icon-weixin{
+    color: #07AF12;
 }
 .card li img{
     width: 100%;
@@ -276,6 +319,7 @@ body{
     margin-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
 }
 .web img{
     width: 100%;
@@ -286,12 +330,26 @@ body{
 .web:hover img{
     transform: scale(1.2,1.2);
 }
+.web span{
+    padding: 0 40px;
+    font-size: 17px;
+    color: white;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    top: 46px;
+    left: 0px;
+}
 .world{
     width: 280px;
     height: 140px;
     background: white;
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
 }
 .world img{
     width: 100%;
@@ -301,6 +359,19 @@ body{
 }
 .world:hover img{
     transform: scale(1.5,1.5);
+}
+.world span{
+    padding: 0 40px;
+    font-size: 17px;
+    color: #333333;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    top: 46px;
+    left: 0px;
 }
 .essay{
     width: 560px;
@@ -325,7 +396,7 @@ body{
 .essay h2{
     height: auto;
     width: 100%;
-    background: grey;
+    background: white;
     font-size: 18px;
 }
 .essay li.sq h2{
@@ -435,6 +506,7 @@ body{
     background: #f6f6f6;
     margin: 20px auto;
     display: block;
+    overflow: hidden;
 }
 .tebie{
     width: 850px;
@@ -500,13 +572,17 @@ body{
 .word .item:hover{
     box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
 }
+.word li a{
+    display: block;
+    overflow: hidden;
+}
 .word li a img{
     display: block;
     height: 130px;
     width: 100%;
     transition: transform 0.5s ease;
 }
-.word li a:hover img{
+.word li a img:hover{
     transform: scale(1.2,1.2);
 }
 .word li h2{
@@ -549,10 +625,32 @@ body{
     background: white;
     float: left;
     margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
 }
-.nvzi img{
+.nvzi span{
+    font-size: 17px;
+    color: white;
+    position: absolute;
+    left: 0px;
+    top: 51px;
+    padding: 0 40px;
+}
+.nvzi a{
+    /*width: 200px;*/
+    height: 140px;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.nvzi a img{
     width: 100%;
     border-radius: 10px;
+    transition: transform 0.5s ease;
+    /*border-radius: 10px;*/
+}
+.nvzi a img:hover{
+    transform: scale(1.2,1.2);
 }
 .gz li{
     width: 80%;
@@ -720,7 +818,7 @@ body{
 .interview{
     width: 100%;
     height: 70px;
-    background: #b7f576;
+    /*background: #b7f576;*/
     margin-top: 10px;
     float: left;
     border-radius: 10px;
@@ -731,20 +829,34 @@ body{
     background: #333333;
     float: left;
 }
+.leftGraphy a{
+    width: 65px;
+    height: 70px;
+    display: block;
+    overflow: hidden;
+}
 .interview .rightEss{
     height:100%;
     width: 75%;
-    background: #f6f6f6;
+    /*background: #f6f6f6;*/
     float: right;
     font-size: 16px;
+}
+.interview .rightEss:hover{
+    background: #f6f6f6;
+    transition: all 0.5s ease;
 }
 .rightEss a{
     text-decoration: none;
     color: black;
 }
-.interview img{
+.interview a img{
     height: 100%;
     width: 100%;
+    transition: transform 0.5s ease;
+}
+.interview a:hover img{
+    transform: scale(1.2,1.2);
 }
 .blogess{
     width: 850px;
@@ -778,19 +890,26 @@ body{
     text-decoration: none;
     color: black;
     line-height: 32px;
+    overflow: hidden;
 }
 .k{
+    display: block;
     width: 260px;
     height: 120px;
     border-radius: 10px;
     background: #333333;
     float: left;
     margin-top: 10px;
+    overflow: hidden;
 }
-.ding a img{
+.k img{
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+.ding a:hover img{
+    transform: scale(1.2,1.2);
 }
 .wenzi{
     width: 550px;
@@ -852,26 +971,50 @@ body{
     right: 0;
     top: 42px;
 }
-/*.touxiang img{*/
-
-/*}*/
-/*.test{*/
-/*    width: 280px;*/
-/*    height: 200px;*/
-/*    background: #5b3896;*/
-/*    float: right;*/
-/*}*/
-/*span.test2{*/
-/*    width: 1000px;*/
-/*    height: 200px;*/
-/*    background: #1a2196;*/
-/*    float: left;*/
-/*}*/
-/*设置固定三行*/
-/*a{*/
-/*    display: -webkit-box;*/
-/*    -webkit-box-orient: vertical;*/
-/*    -webkit-line-clamp:3;*/
-/*clamp是固定的意思*/
-/*    overflow: hidden;*/
-/*}*/
+.footer{
+    width: 100%;
+    padding: 30px 0;
+    background: #373D41;
+    font-size: 16px;
+    color: #73777a;
+    border-top: #00C1DE 10px solid;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.wxbox{
+    width: 240px;
+    float: left;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.wxbox ul{
+    width: 100%;
+}
+.wxbox ul li{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 0 10px;
+}
+.wxbox ul li img{
+    width: 100%;
+    height: 100%;
+}
+.endnav{
+    flex: 1;
+    height: 100px;
+}
+.endnav b{
+    font-size: 16px;
+    color: #00c1de;
+}
+.endnav p{
+    margin-bottom: 5px;
+}
+.footer a{
+    color: #73777a;
+}
+.footer a:hover{
+    color: #00c1de;
+}

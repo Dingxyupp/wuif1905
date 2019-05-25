@@ -1,0 +1,68 @@
+@import "blogDiary.css";
+@import "base.css";
+article{
+    width: 96%;
+    margin: 20px auto;
+}
+.timebox {
+    background: #fff;
+    padding: 30px;
+    border-radius: 3px;
+}
+.timebox span {
+    position: relative;
+    line-height: 32px;
+    padding-right: 40px;
+    color: #999;
+}
+.timebox li{
+
+}
+.timebox li i{
+    font-style: normal;
+    position: relative;
+}
+.timebox li span:after{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 40px;
+    background: #e0dfdf;
+    right: 18px;
+}
+.timebox li i:before{
+    content: " ";
+    height: 10px;
+    width: 10px;
+    border: 2px solid #cccaca;
+    background: #fff;
+    position: absolute;
+    top: 4px;
+    left: -26px;
+    border-radius: 50%;
+}
+.timebox li i:hover:before{
+    transition: all 0.5s ease;
+    background: #333;
+}
+.pagelist{
+    text-align: center;
+    color: #666;
+    width: 100%;
+    clear: both;
+    margin: 0 0 10px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.pagelist a{
+    color: #666;
+    margin: 0 5px 10px;
+    padding: 5px 10px;
+    background: #F7F7F7;
+    display: inline-block;
+}
+.pagelist a:hover{
+    background: #333;
+    color: white;
+}
