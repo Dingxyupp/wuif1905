@@ -115,10 +115,16 @@
     margin: 0 0 10px 0;
 }
 .blogtitle b{
+    /*display: block;*/
+    float: left;
     color: #F00;
 }
 .bloglist b span{
+    /*display: block;*/
     color: #333;
+}
+.blogtitle b a{
+    color: red;
 }
 .blogpic{
     display: block;
@@ -130,10 +136,11 @@
 }
 .bloglist a{
     display: block;
-    height: 140px;
-    width: 200px;
+    /*height: 140px;*/
+    /*width: 200px;*/
     position: relative;
     overflow: hidden;
+    float: left;
 }
 .bloglist .lastTs{
     width: 166px;
