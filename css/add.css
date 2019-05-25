@@ -1,0 +1,332 @@
+@import "base.css";
+@import "blogDiary.css";
+article{
+    width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+/*body {*/
+/*    font: 15px "Microsoft YaHei", Arial, Helvetica, sans-serif;*/
+/*    color: #333;*/
+/*    background: #E9EAED;*/
+/*    line-height: 1.5;*/
+/*    overflow-x: hidden;*/
+/*}*/
+.lbox {
+    width: 75%;
+    float: left;
+    overflow: hidden;
+}
+.whitebg {
+    background: #fff;
+    border-radius: 3px;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.htitle {
+    font-size: 16px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+    color: #484848;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 10px;
+}
+.con_tilte {
+    font-size: 22px;
+    margin-top: 20px;
+}
+.con_nav {
+    float: right;
+    font-size: 14px;
+    color: #666;
+}
+.con_nav a {
+    color: #666;
+}
+.bloginfo {
+    margin-top: 20px;
+    overflow: hidden;
+    color: #999;
+    line-height: 34px;
+}
+.avatar {
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    padding: 2px;
+    display: block;
+    /*background: -webkit-linear-gradient(bottom left, rgba(0,153,255,.9), rgba(42,228,197,.7));*/
+    /*background: -o-linear-gradient(bottom left, rgba(0,153,255,.9), rgba(42,228,197,.7));*/
+    background: linear-gradient(to top right, rgba(0,153,255,.9), rgba(42,228,197,.7));
+}
+.bloginfo span {
+    margin: 0 5px;
+}
+.con_info {
+    color: #888888;
+    border: 1px solid #F3F3F3;
+    padding: 10px;
+    margin: 10px auto 0;
+    line-height: 23px;
+    background: none repeat 0 0 #F6F6F6;
+}
+.con_info b {
+    margin-right: 10px;
+    color: #000;
+}
+.con_text {
+    line-height: 24px;
+    margin-top: 20px;
+}
+.con_text img {
+    display: block;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: auto;
+}
+.con_text p {
+    margin: 15px 0;
+}
+.con_text a {
+    color: #09C;
+    word-break: break-all;
+}
+.nextinfo a {
+    color: #000;
+}
+.whitebg {
+    background: #fff;
+    border-radius: 3px;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.otherlink {
+    margin: 10px 0;
+    overflow: hidden;
+}
+.otherlink li {
+    position: relative;
+    line-height: 26px;
+    height: 26px;
+    display: block;
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+.otherlink li:before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: #000;
+    border-radius: 10px;
+    left: 0px;
+    top: 12px;
+}
+.otherlink li a {
+    display: block;
+    margin-right: 30px;
+    padding-left: 10px;
+}
+.xiangsi {
+    margin-top: 20px;
+    overflow: hidden;
+}
+.xiangsi li {
+    width: 25%;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.xiangsi li i {
+    display: block;
+    overflow: hidden;
+    height: 120px;
+    margin-bottom: 10px;
+}
+.xiangsi a {
+    display: block;
+    margin: 0 5px;
+    padding-bottom: 10px;
+    box-shadow: #ececec 0px 2px 5px;
+    overflow: hidden;
+}
+.xiangsi li span {
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: block;
+    -webkit-line-clamp: 3;
+    font-size: 14px;
+    height: 62px;
+    padding: 0 8px;
+}
+.xiangsi li p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0 8px;
+}
+.xiangsi li i img {
+    width: 100%;}
+p.fbtime {
+    color: #000;
+}
+p.fbinfo {
+    margin: 10px 0;
+}
+.saying {
+    line-height: 30px;
+    color: #a9a6a6;
+}
+.yname {
+    margin: 10px 10px 10px 0;
+}
+.yzm {
+    margin: 0 10px 10px 0;
+}
+.rbox {
+    width: 23.5%;
+    float: right;
+    overflow: hidden;
+}
+.topnews {
+    display: block;
+    margin: 20px 0;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    max-height: 110px;
+}
+.paihang ul {
+    overflow: hidden;
+}
+.paihang ul li {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.paihang ul li:first-child i, .paihang ul li:nth-child(2) i, .paihang ul li:nth-child(3) i {
+    background: #FF6600;
+}
+.tuijian ul {
+    overflow: hidden;
+    padding-top: 10px;
+}
+.tuijian li {
+    overflow: hidden;
+    margin-bottom: 10px;
+    height: 60px;
+}
+.ad ul {
+    overflow: hidden;
+    border-radius: 3px;
+}
+.cloud ul a:first-child {
+    /* background: #036564; */
+}
+.cloud ul a:nth-child(8n-7) {
+    background: #8A9B0F;
+}
+.cloud ul a {
+    line-height: 24px;
+    height: 24px;
+    display: block;
+    background: #999;
+    float: left;
+    padding: 3px 10px;
+    margin: 10px 5px 0 0;
+    border-radius: 3px;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #FFF;
+}
+.cloud ul a:nth-child(8n-6) {
+    background: #EB6841;
+}
+.cloud ul a:nth-child(8n-5) {
+    background: #3FB8AF;
+}
+.cloud ul a:nth-child(8n-4) {
+    background: #FE4365;
+}
+.cloud ul a:nth-child(8n-3) {
+    background: #FC9D9A;
+}
+.cloud ul a:nth-child(8n-2) {
+    background: #EDC951;
+}
+.cloud ul a:nth-child(8n-1) {
+    background: #C8C8A9;
+}
+.cloud ul a:nth-child(8n) {
+    background: #83AF9B;
+}
+.cloud ul a:nth-child(8n-7) {
+    /* background: #8A9B0F; */
+}
+.cloud ul a:nth-child(8n-6) {
+    background: #EB6841;
+}
+.cloud ul a:nth-child(8n-5) {
+    background: #3FB8AF;
+}
+.cloud ul a:nth-child(8n-4) {
+    /* background: #FE4365; */
+}
+.cloud ul a:nth-child(8n-3) {
+    background: #FC9D9A;
+}
+.cloud ul a:nth-child(8n-2) {
+    background: #EDC951;
+}
+.cloud ul a:last-child {
+    background: #3299BB;
+}
+.wenzi li {
+    line-height: 22px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+}
+.wenzi li:before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: #000;
+    border-radius: 10px;
+    left: 0px;
+    top: 10px;
+}
+.ad ul {
+    overflow: hidden;
+    border-radius: 3px;
+}
+.ad img {
+    width: 100%;
+}
+.tongji li {
+    margin-bottom: 8px;
+}
+.gbook .fb ul {
+    margin: 10px 10px;
+    padding: 10px 10px 10px 70px;
+    border-bottom: #ececec 1px solid;
+}
