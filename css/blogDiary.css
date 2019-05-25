@@ -19,13 +19,13 @@
 }
 .headbox{
     width: 1200px;
-    height: 60px;
+    height: 50px;
     margin: 0 auto;
     background: black;
 }
 .headbox h1{
     width: 200px;
-    height:60px;
+    height:50px;
     background: black;
     float: left;
     line-height: 60px;
@@ -34,7 +34,7 @@
     margin-right: 30px;
 }
 .startlist li a{
-    height:60px;
+    height: 50px;
     background: black;
     float: left;
     line-height: 60px;
@@ -44,7 +44,7 @@
 }
 .search{
     width: 100px;
-    height:60px;
+    height:50px;
     background: black;
     float: right;
 }
