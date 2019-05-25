@@ -386,6 +386,7 @@ body{
     height: auto;
     background: #ffffff;
     margin: 0 0px 27px 10px;
+    position: relative;
 }
 .essay li.sq p{
     display: block;
@@ -421,15 +422,55 @@ body{
     background: #f7f7f7;
     padding-left: 20px;
 }
-.essay li.sq a:before{
+.essay li.sq a:first-child:before{
     content: "1";
     background: black;
     color: white;
     position: absolute;
     height: 18px;
     width: 12px;
+    left: 0px;
+    /*right: 0px;*/
+}
+.essay li:nth-child(2):before{
+    content: "2";
+    background: #9a9a9a;
+    color: white;
+    position: absolute;
+    height: 18px;
+    width: 12px;
+    left: 0;
+    top: 0;
+}
+.essay li:nth-child(3):before{
+    content: "3";
+    background: #9a9a9a;
+    color: white;
+    position: absolute;
+    height: 18px;
+    width: 12px;
     left: 0;
     right: 0;
+}
+.essay li:nth-child(4):before{
+    content: "4";
+    background: #9a9a9a;
+    color: white;
+    position: absolute;
+    height: 18px;
+    width: 12px;
+    left: 0px;
+    /*right: 0px;*/
+}
+.essay li:nth-child(5):before{
+    content: "5";
+    background: #9a9a9a;
+    color: white;
+    position: absolute;
+    height: 18px;
+    width: 12px;
+    left: 0;
+    /*right: 0;*/
 }
 .essay p{
     display: none;
