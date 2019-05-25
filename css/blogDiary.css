@@ -179,7 +179,7 @@
     /*float: left;*/
     /*width: 533px;*/
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: 30px;
     line-height: 30px;
     /*position: relative;*/
 }
@@ -216,8 +216,8 @@
     font-size: 15px;
     /*float: right;*/
     position: absolute;
-    right: 0px;
-    bottom: 30px;
+    right: 10px;
+    bottom: 20px;
 }
 .part2{
     width: 23.5%;
