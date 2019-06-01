@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       .box{
+           width: 200px;
+           height: 200px;
+           background: #00C1DE;
+           position: absolute;
+           left: 0;
+           top: 40px;
+       }
+    </style>
+    <script src="animate.js"></script>
+</head>
+<body>
+<button>提交</button>
+<div class="box"></div>
+<script>
+    window.onload=function () {
+        let box = document.querySelector('.box');
+        let button = document.querySelector('button');
+        button.onclick=function () {
+            animate(box,{width:200,height:300})
+        }
+    }
+</script>
+</body>
+</html>

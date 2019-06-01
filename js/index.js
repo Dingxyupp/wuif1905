@@ -126,11 +126,11 @@ window.onload=function() {
     //三秒换图
     let lbt = document.querySelectorAll('.lbt')
     let t = setInterval(rightBtn.onclick, 3000);
-    rightBtn.onmouseleave=function () {
-        t = setInterval(rightBtn.onclick, 3000);
-    }
     rightBtn.onmouseenter=function(){
         clearInterval(t);
+    }
+    rightBtn.onmouseleave=function () {
+        t = setInterval(rightBtn.onclick, 3000);
     }
     leftBtn.onmouseleave=function () {
         t = setInterval(leftBtn.onclick, 3000);
