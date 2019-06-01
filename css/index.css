@@ -93,15 +93,32 @@ body{
     float: left;
     margin-right: 20px;
     position: relative;
+    overflow: hidden;
     /*border-radius: 10px;*/
+}
+.picture .lbt{
+    width: 100%;
+    height: 100%;
+}
+.picture .lbt li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 600px;
+    top: 0;
+    transition: all  ease;
+}
+.picture .lbt li.current{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0;
 }
 .picture ul li img{
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    position: absolute;
-    left: 0;
-    top: 0;
 }
 .leftBtn,.rightBtn{
     width: 30px;
@@ -111,7 +128,11 @@ body{
     top: 50%;
     margin-top: -5px;
     cursor: pointer;
+    z-index: 999;
 }
+/*.rightBtn a{*/
+/*    display: block;*/
+/*}*/
 .leftBtn{
     left: 20px;
 }
@@ -119,7 +140,7 @@ body{
     right: 20px;
 }
 .circul{
-    background: green;
+    /*background: green;*/
     width: 130px;
     position: absolute;
     bottom: 30px;
@@ -129,49 +150,64 @@ body{
     margin-right: auto;
     /*overflow: hidden;*/
 }
+.circul li.oneBotton{
+    background: #fbb548;
+}
+.circul li{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+    background: white;
+}
 .circul li .oneBotton{
     width: 12px;
     height: 12px;
     border-radius: 50%;
     background: #ffffff;
     cursor: pointer;
-    position: absolute;
-    left: 0px;
-    bottom: 20px;
+    display: block;
+    /*position: absolute;*/
+    /*left: 0px;*/
+    /*bottom: 20px;*/
 }
-.circul li .twoBotton{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #ffffff;
-    cursor: pointer;
-    position: absolute;
-    left: 40px;
-    bottom: 20px;
-}
-.circul li .threeBotton{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #ffffff;
-    cursor: pointer;
-    position: absolute;
-    left: 80px;
-    bottom: 20px;
-}
-.circul li .fourBotton{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #ffffff;
-    cursor: pointer;
-    position: absolute;
-    left: 120px;
-    bottom: 20px;
-}
-.circul a:hover{
-    background: #b7f576;
-}
+/*.circul li .twoBotton{*/
+/*    width: 12px;*/
+/*    height: 12px;*/
+/*    border-radius: 50%;*/
+/*    background: #ffffff;*/
+/*    cursor: pointer;*/
+/*    display: block;*/
+/*    !*position: absolute;*!*/
+/*    !*left: 40px;*!*/
+/*    !*bottom: 20px;*!*/
+/*}*/
+/*.circul li .threeBotton{*/
+/*    width: 12px;*/
+/*    height: 12px;*/
+/*    border-radius: 50%;*/
+/*    background: #ffffff;*/
+/*    cursor: pointer;*/
+/*    display: block;*/
+/*    !*position: absolute;*!*/
+/*    !*left: 80px;*!*/
+/*    !*bottom: 20px;*!*/
+/*}*/
+/*.circul li .fourBotton{*/
+/*    width: 12px;*/
+/*    height: 12px;*/
+/*    border-radius: 50%;*/
+/*    background: #ffffff;*/
+/*    cursor: pointer;*/
+/*    display: block;*/
+/*    !*position: absolute;*!*/
+/*    !*left: 120px;*!*/
+/*    !*bottom: 20px;*!*/
+/*}*/
+/*.circul a:hover{*/
+/*    background: #b7f576;*/
+/*}*/
 .double{
     width: 330px;
     height: 330px;
@@ -289,7 +325,7 @@ body{
     /*height: 22px;*/
     background-color: white;
     float: left;
-    border-bottom: 1px solid #333333;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
     line-height: 20px;
     font-size: 18px;
     margin-bottom: 30px;
