@@ -7,16 +7,56 @@
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1209986_zxcyfu3o3dn.css">
     <script src="./js/index.js"></script>
     <script src="./animate/animate.js"></script>
+<!--    <script>-->
+<!--        $(function (){-->
+<!--            let slideBtn=$('li:has(.new)');-->
+<!--            let slide=$('.new');-->
+<!--            // console.log($('.new'));-->
+<!--            // slideBtn.on('mouseenter',function () {-->
+<!--            //     let index=$(this).index('.header>.headbox>.startlist>li:has(.new)');-->
+<!--            //     $(slide[index]).slideDown();-->
+<!--            // })-->
+<!--            // slideBtn.on('mouseleave',function () {-->
+<!--            //     // let index=$(this).index('.header>.headbox>.startlist>li:has(.new)');-->
+<!--            //     // $(slide[index]).slideUp();-->
+<!--            //     return slide.slideUp();-->
+<!--            // })-->
+<!--            // slideBtn.on('mouseenter',function () {-->
+<!--            //     $(this).children(".new").slideDown();-->
+<!--            // })-->
+<!--            // slideBtn.on('mouseleave',function () {-->
+<!--            //     $(this).children('.new').slideUp();-->
+<!--            // })-->
+<!--            slideBtn.hover(function () {-->
+<!--                $(this).children(".new").slideDown();-->
+<!--                },function () {-->
+<!--                $(this).children(".new").slideUp();-->
+<!--                }-->
+<!--            )-->
+<!--        })-->
+<!--    </script>-->
 </head>
 <body>
 <!--head-->
 <div class="header">
     <div class="headbox">
-        <h1 align="middle" >DjTop的博客</h1>
+        <h1 align="middle">DjTop的博客</h1>
         <ul class="startlist">
             <li><a href="" style="color: #00c1de">网站首页</a></li>
-            <li><a href="blogDiary.html">个人博客日记</a></li>
-            <li><a href="MakeWeb.html">网站制作</a></li>
+            <li><a href="blogDiary.html">个人博客日记
+                <ul class="new">
+                    <li>个人生活日记</li>
+                    <li>个人学习日记</li>
+                    <li>个人工作日记</li>
+                </ul>
+            </a></li>
+            <li><a href="MakeWeb.html">网站制作
+                <ul class="new">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+            </a></li>
             <li><a href="DesignIdea.html">设计心得</a></li>
             <li><a href="AboutMe.html">关于我</a></li>
             <li><a href="TimeZhou.html">时间轴</a></li>

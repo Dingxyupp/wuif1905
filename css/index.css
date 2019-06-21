@@ -15,7 +15,16 @@ body{
 .startlist a:hover{
     color: #00c1de;
 }
-
+.startlist li ul{
+    display: none;
+    width: auto;
+    height: auto;
+}
+.startlist li .new li{
+    height: 10px;
+    color: white;
+    background: black;
+}
 /*head*/
 .header{
     /*快标签不写默认百分百*/

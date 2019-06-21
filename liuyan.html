@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/liuyan.css">
+</head>
+<body>
+<div class="header">
+    <div class="headbox">
+        <h1 align="middle">DjTop的博客</h1>
+        <ul class="startlist">
+            <li><a href="index.html" >网站首页</a></li>
+            <li><a href="blogDiary.html">个人博客日记</a></li>
+            <li><a href="MakeWeb.html">网站制作</a></li>
+            <li><a href="DesignIdea.html">设计心得</a></li>
+            <li><a href="AboutMe.html">关于我</a></li>
+            <li><a href="TimeZhou.html">时间轴</a></li>
+            <li><a href="">博客导航</a></li>
+            <li><a href="" style="color: #00c1de">留言</a></li>
+        </ul>
+        <div class="search">
+            <a><img src="./img/bg.png" alt=""></a>
+        </div>
+    </div>
+</div>
+<article>
+    <div class="whitebg">
+        <h2 class="htitle">留言</h2>
+        <div class="news_infos m20">
+            <div class="gbox">
+                <form action="../../enews/index.php" method="post" name="form1" id="form1">
+                    <p> <strong>来说点儿什么吧...</strong></p>
+                    <p><span> 您的姓名:</span>
+                        <input name="name" type="text" id="name">
+                        *</p>
+                    <input name="email" type="hidden" id="email" value="admin@qq.com">
+                    <p><span>选择头像:</span> *</p>
+                    <p> <i>
+                        <input type="radio" value="../images/tx1.jpg" id="1" name="mycall" style="display:none" selected="">
+                        <img id="a" src="../images/tx1.jpg " onclick="myFun(this.id)"></i> <i>
+                        <input type="radio" value="../images/tx2.jpg" id="2" name="mycall" style="display:none">
+                        <img id="b" src="../images/tx2.jpg" onclick="myFun(this.id)"></i> <i>
+                        <input type="radio" value="../images/tx3.jpg" id="3" name="mycall" style="display:none">
+                        <img id="c" src="../images/tx3.jpg" onclick="myFun(this.id)"></i> <i>
+                        <input type="radio" value="../images/tx4.jpg" id="4" name="mycall" style="display:none">
+                        <img id="d" src="../images/tx4.jpg " onclick="myFun(this.id)"></i> <i>
+                        <input type="radio" value="../images/tx5.jpg" id="5" name="mycall" style="display:none">
+                        <img id="e" src="../images/tx5.jpg" onclick="myFun(this.id)"></i> <i>
+                        <input type="radio" value="../images/tx6.jpg" id="6" name="mycall" style="display:none">
+                        <img id="f" src="../images/tx6.jpg" onclick="myFun(this.id)"></i> <i>
+                        <input type="radio" value="../images/tx7.jpg" id="7" name="mycall" style="display:none">
+                        <img id="g" src="../images/tx7.jpg" onclick="myFun(this.id)"></i> <i>
+                        <input type="radio" value="../images/tx8.jpg" id="8" name="mycall" style="display:none">
+                        <img id="h" src="../images/tx8.jpg" onclick="myFun(this.id)"></i> </p>
+                    <p><span class="tnr">留言内容:</span>
+                        <textarea name="lytext" cols="60" rows="12" id="lytext"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" name="Submit3" value="提交">
+                        <input name="enews" type="hidden" id="enews" value="AddGbook">
+                    </p>
+                </form>
+            </div>
+
+
+            <div class="fb">
+                <ul>
+                    <span class="tximg"><img src="../images/tx5.jpg"></span>
+                    <p class="fbtime"><span>
+            2018-12-08            </span> lookweb</p>
+                    <p class="fbinfo">模板更新了可以给我们用吗？</p>
+                </ul>
+            </div>
+
+
+            <div class="hf">
+                <ul>
+                    <p class="zzhf"><font color="#FF0000">站长回复:</font>购买，请加青青微信。476847113</p>
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="fb">
+                <ul>
+                    <span class="tximg"><img src="../images/tx3.jpg"></span>
+                    <p class="fbtime"><span>
+            2018-12-06            </span> dancesmile</p>
+                    <p class="fbinfo">你好！这是我第一个留言的。</p>
+                </ul>
+            </div>
+
+
+            <div class="hf">
+                <ul>
+                    <p class="zzhf"><font color="#FF0000">站长回复:</font>你好，欢迎您访问我的网站</p>
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="clear"></div>
+            <div class="pagelist"></div>
+
+            <script>
+                function myFun(sId) {
+
+                    var oImg = document.getElementsByTagName('img');
+
+                    for (var i = 0; i < oImg.length; i++) {
+                        if (oImg[i].id == sId) {
+                            oImg[i].previousSibling.previousSibling.checked = true;
+                            oImg[i].style.opacity = '1';
+                        } else {
+                            oImg[i].style.opacity = '.8';
+
+                        }
+                    }
+                }
+            </script>
+        </div>
+        <!--newsinfo end-->
+
+    </div>
+</article>
+<div class="footer">
+    <div class="box">
+        <div class="wxbox">
+            <ul>
+                <li>
+                    <img src="./img/wxgzh.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./img/wx.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="endnav">
+        <p><b>站点声明：</b></p>
+        <p>1、本站个人博客模板，均为杨青青本人设计，个人可以使用，但是未经许可不得用于任何商业目的。</p>
+        <p>2、所有文章未经授权禁止转载、摘编、复制或建立镜像，如有违反，追究法律责任。举报邮箱：<a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=HHh9cn95b3F1cHVye1xtbTJ-c3E" target="_blank">dacesmiling@qq.com</a></p>
+        <p>Copyright © <a href="http://www.yangqq.com" target="_blank">www.yangqq.com</a> All Rights Reserved. 备案号：<a href="http://www.miitbeian.gov.cn/" target="_blank">蜀ICP备11002373号-1</a></p>
+    </div>
+</div>
+</body>
+</html>

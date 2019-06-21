@@ -59,14 +59,22 @@ window.onload=function() {
     let leftBtn = document.querySelector('.leftBtn');
     let picture = document.querySelectorAll('.lbt>li');
     let w = picture[0].offsetWidth;
-    rightBtn.onclick = function () {
+    let flag=true;
+    rightBtn.onclick = function (){
+        if(!flag){
+            return;
+        }
         next++;
+        flag=false;
         if(next==picture.length){
             next=0;
         }
         picture[next].style.left=w+'px';
-        animate(picture[current], {left: -w})
+        animate(picture[current], {left: -w},function () {
+            flag=true;
+        })
         animate(picture[next], {left: 0})
+
         current = next;
         li2.forEach(function (elem) {
             elem.classList.remove('oneBotton');
@@ -74,12 +82,18 @@ window.onload=function() {
         li2[next].classList.add('oneBotton');
     }
     leftBtn.onclick=function(){
+        if(!flag){
+            return;
+        }
         next--;
+        flag=false;
         if(next<0){
             next=picture.length-1;
         }
         picture[next].style.left=-w+'px';
-        animate(picture[current], {left: w})
+        animate(picture[current], {left: w},function () {
+            flag=true;
+        })
         animate(picture[next], {left: 0})
         current = next;
         li2.forEach(function (elem) {
