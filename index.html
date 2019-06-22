@@ -5,43 +5,44 @@
     <title>个人博客</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1209986_zxcyfu3o3dn.css">
+    <script src="jquery-3.4.1.js"></script>
     <script src="./js/index.js"></script>
     <script src="./animate/animate.js"></script>
-<!--    <script>-->
-<!--        $(function (){-->
-<!--            let slideBtn=$('li:has(.new)');-->
-<!--            let slide=$('.new');-->
-<!--            // console.log($('.new'));-->
-<!--            // slideBtn.on('mouseenter',function () {-->
-<!--            //     let index=$(this).index('.header>.headbox>.startlist>li:has(.new)');-->
-<!--            //     $(slide[index]).slideDown();-->
-<!--            // })-->
-<!--            // slideBtn.on('mouseleave',function () {-->
-<!--            //     // let index=$(this).index('.header>.headbox>.startlist>li:has(.new)');-->
-<!--            //     // $(slide[index]).slideUp();-->
-<!--            //     return slide.slideUp();-->
-<!--            // })-->
-<!--            // slideBtn.on('mouseenter',function () {-->
-<!--            //     $(this).children(".new").slideDown();-->
-<!--            // })-->
-<!--            // slideBtn.on('mouseleave',function () {-->
-<!--            //     $(this).children('.new').slideUp();-->
-<!--            // })-->
-<!--            slideBtn.hover(function () {-->
-<!--                $(this).children(".new").slideDown();-->
-<!--                },function () {-->
-<!--                $(this).children(".new").slideUp();-->
-<!--                }-->
-<!--            )-->
-<!--        })-->
-<!--    </script>-->
+    <script>
+        $(function (){
+            let slideBtn=$('li:has(.new)');
+            let slide=$('.new');
+            console.log($('.new'));
+            slideBtn.on('mouseenter',function () {
+                let index=$(this).index('.header>.headbox>.startlist>li:has(.new)');
+                $(slide[index]).slideDown();
+            })
+            slideBtn.on('mouseleave',function () {
+                let index=$(this).index('.header>.headbox>.startlist>li:has(.new)');
+                $(slide[index]).slideUp();
+                return slide.slideUp();
+            })
+            // slideBtn.on('mouseenter',function () {
+            //     $(this).children(".new").slideDown();
+            // })
+            // slideBtn.on('mouseleave',function () {
+            //     $(this).children('.new').slideUp();
+            // })
+            // slideBtn.hover(function () {
+            //     $(this).children(".new").slideDown();
+            //     },function () {
+            //     $(this).children(".new").slideUp();
+            //     }
+            // )
+        })
+    </script>
 </head>
 <body>
 <!--head-->
-<div class="header">
+<div class="header" style="position: absolute;top: 0;left: 0;z-index: 999">
     <div class="headbox">
         <h1 align="middle">DjTop的博客</h1>
-        <ul class="startlist">
+        <ul class="startlist" >
             <li><a href="" style="color: #00c1de">网站首页</a></li>
             <li><a href="blogDiary.html">个人博客日记
                 <ul class="new">
@@ -70,7 +71,7 @@
 </div>
 <!--居中部分-->
 <div class="neck">
-    <div class="picture">
+    <div class="picture" style="z-index: 0">
         <ul class="lbt">
             <li class="current"><img src="./img/timg.jpg" alt="图片加载失败"></li>
             <li><img src="./img/2.jpg" alt="图片加载失败"></li>

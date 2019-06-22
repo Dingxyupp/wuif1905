@@ -21,9 +21,13 @@ body{
     height: auto;
 }
 .startlist li .new li{
-    height: 10px;
+    height: auto;
     color: white;
     background: black;
+    text-align: center;
+}
+.startlist li .new li:hover{
+    color: #00c1de;
 }
 /*head*/
 .header{
@@ -88,7 +92,7 @@ body{
 
 
 /*neck*/
-.neck{
+.neck{padding-top: 60px;
     width: 1200px;
     height: 330px;
     background: #E9EAED;
